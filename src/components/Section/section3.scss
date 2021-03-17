@@ -1,0 +1,24 @@
+@import '../../App.scss';
+
+.section3 {
+  background: #238cf0
+    url(https://cdn.supercell.com/supercell.com/210317084414/all/themes/supercell/img/18/bg_wmg_brawlstars.jpg)
+    no-repeat;
+  background-size: 100% auto;
+  background-position: top left;
+  height: 100%;
+
+  @extend .flex;
+  justify-content: space-around;
+}
+
+.section3__left {
+  flex: 0.7;
+}
+.section3__right {
+  img {
+    width: 66%;
+    height: 500px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,41 @@
+@import '../../App.scss';
+
+.section2 {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+  display: grid;
+  place-items: center;
+
+  > button {
+  }
+}
+.section2__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 120px 70px;
+}
+.card {
+  > img {
+    width: 800px;
+  }
+}
+.field-label-hidden {
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 1.65;
+  list-style-type: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'SupercellText-Bold', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #fb4a9d;
+}
+.para {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 700;
+}

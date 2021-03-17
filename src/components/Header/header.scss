@@ -1,0 +1,75 @@
+@import '../../App.scss';
+.header {
+  @extend .flex;
+  justify-content: space-between;
+  width: 84%;
+  margin: auto;
+  background: #000;
+  height: 110px;
+  z-index: 100;
+}
+.header__left {
+  flex: 0.42;
+  @extend .flex;
+  justify-content: space-around;
+  > a {
+    > img {
+      width: 500;
+      height: 54px;
+    }
+  }
+}
+.header__left__menu {
+  margin: 0;
+  padding: 32px 0 0 0;
+  background: #000;
+  line-height: 1em;
+  @extend .flex;
+  margin-right: 15px;
+  > li {
+    display: inline-block;
+    margin: 0 0 0 60px;
+    padding: 0 0 30px;
+    font-family: 'SupercellText-Medium', Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1em;
+    font-size: 1.2rem;
+    color: #000;
+    > span {
+      > a {
+        display: block;
+        color: #808080;
+        padding: 6px 2px;
+        text-decoration: none;
+        outline: none;
+        white-space: nowrap;
+        letter-spacing: 0 !important;
+      }
+    }
+  }
+}
+.header__right {
+  @extend .flex;
+  justify-content: space-around;
+}
+
+.header__right__logo {
+  border-right: 1px solid #363636;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgb(54, 54, 54);
+  margin-right: 30px;
+  > a {
+    > img {
+      width: 136px;
+      height: 30px;
+    }
+  }
+}
+.header__right__search {
+  margin-right: 30px;
+  > svg {
+    color: white;
+  }
+}
