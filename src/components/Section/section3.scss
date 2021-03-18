@@ -13,12 +13,30 @@
 }
 
 .section3__left {
-  flex: 0.7;
+  // flex: 0.9;
+  > h1 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  > p {
+    color: white;
+    margin-bottom: 35px;
+    width: 600px;
+  }
+  > button {
+    font-size: 13px;
+    padding: 15px 41px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000 !important;
+    font-weight: 600;
+  }
 }
 .section3__right {
+  flex: 0.6;
   img {
-    width: 66%;
-    height: 500px;
+    width: 600px;
+    height: 800px;
     margin: 0 auto;
   }
 }

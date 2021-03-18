@@ -16,12 +16,12 @@
 .social {
   > h6 {
     margin-bottom: 15px;
-    > svg {
-      margin-right: 16px;
-    }
   }
 }
-
+.social__icons svg {
+  margin-right: 16px !important;
+  font-size: 36px !important;
+}
 .appstore {
   --swiper-theme-color: #007aff;
   --swiper-navigation-size: 44px;
@@ -67,4 +67,18 @@
   background: url(https://cdn.supercell.com/supercell.com/210317084414/all/themes/supercell/img/18/footer_googleplay.png)
     no-repeat;
   background-size: 100% auto;
+}
+
+.footer__tags {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  > h6 {
+    margin-right: 30px;
+  }
+}
+.footer__end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

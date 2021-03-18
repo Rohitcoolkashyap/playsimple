@@ -14,7 +14,6 @@ export default function Games() {
         button="SEE ALL GAMES"
       />
       <Section2 />
-      <Footer />
     </div>
   );
 }

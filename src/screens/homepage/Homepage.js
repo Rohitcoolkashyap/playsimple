@@ -18,7 +18,6 @@ export default function Homepage() {
       <Section2 />
       <Section3 />
       <Section4 />
-      <Footer />
     </div>
   );
 }

@@ -8,12 +8,14 @@
   place-items: center;
 
   > button {
+    margin-bottom: 100px;
   }
 }
 .section2__cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 120px 70px;
+  margin-bottom: 30px;
 }
 .card {
   > img {
