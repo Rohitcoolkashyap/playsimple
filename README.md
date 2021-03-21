@@ -1,6 +1,8 @@
 ## supercell clone
 ### How to start project
 
+### demo link : https://60571e05d4454b43a4e6383c--suspicious-torvalds-0e73ea.netlify.app/
+
 #### cd playsimple/npm start
 
 ### technologies used : -
