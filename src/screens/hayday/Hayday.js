@@ -1,7 +1,31 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import Carosel from '../../components/carousel/Carosel';
 import Icons from '../../components/footer/Icons';
 import './hayday.scss';
+
 export default function Hayday() {
+  // const [content1, setContent1] = useState({});
+  // const [content2, setContent2] = useState({});
+  // const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       setLoading(true);
+  //       const data = await axios.get(
+  //         'https://ps-data-store.s3-us-west-2.amazonaws.com/frontend-assignment/assignment-paragh-2.json',
+  //       );
+
+  //       setLoading(false);
+  //       setContent1(data);
+  //     } catch (error) {
+  //       setLoading(false);
+  //       console.log(error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
   return (
     <div className="hayday">
       <div className="hayday__cover"></div>
@@ -19,93 +43,42 @@ export default function Hayday() {
             After all, what are pigs... oops, we mean neighbors for?
           </p>
           <div className="section1__icons">
-            <img src="unnamed.png" alt="" />
-            <img src="unnamed (1).png" alt="" />
-            <img src="unnamed (2).png" alt="" />
-            <img src="unnamed.jpg" alt="" />
+            <img src="/unnamed.png" alt="" />
+            <img src="/unnamed (1).png" alt="" />
+
+            <img src="/unnamed (2).png" alt="" />
+
+            <img src="/unnamed.jpg" alt="" />
           </div>
         </div>
       </div>
 
-      <div className="hayday__section2">
-        <div class="large-8 columns grid-system-row">
-          <div class="row">
-            <div id="timeline">
-              <article
-                class="node node-article-content m-timeline "
-                typeof="sioc:Item foaf:Document"
-                role="article"
-              >
-                <div class="content">
-                  <div class="field field-name-field-content field-type-text-long field-label-hidden">
-                    <div class="large-8 columns grid-system-column introtext">
-                      <div class="mobile-8 large-6 columns grid-system-column">
-                        <h2>Constantly Evolving</h2>
-                        <p>
-                          <em>Hay Day</em> has been constantly evolving to offer
-                          more user-friendly, consistent and fun online
-                          experiences for Supercell gamers. There have been
-                          countless updates since the game launched in 2012.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="large-8 columns grid-system-column chart">
-                      <div class="scroll-container">
-                        <div class="timeline-block medium">
-                          <div class="title icon-launch animate">
-                            <span>Global Launch</span>
-                          </div>
-                          <div class="time">2012</div>
-                        </div>
-                        <div class="timeline-block medium">
-                          <div class="title animate">
-                            <span>Fishing</span>
-                          </div>
-                          <div class="time">&nbsp;</div>
-                        </div>
-                        <div class="timeline-block medium">
-                          <div class="title animate">
-                            <span>Neighborhoods</span>
-                          </div>
-                          <div class="time">&nbsp;</div>
-                        </div>
-                        <div class="timeline-block medium">
-                          <div class="title animate">
-                            <span>Town Update</span>
-                          </div>
-                          <div class="time">&nbsp;</div>
-                        </div>
-                        <div class="timeline-block medium">
-                          <div class="title animate">
-                            <span>Derby Leagues</span>
-                          </div>
-                          <div class="time">&nbsp;</div>
-                        </div>
-                        <div class="timeline-block short">
-                          <div class="title animate">
-                            <span>The Builder</span>
-                          </div>
-                          <div class="time">&nbsp;</div>
-                        </div>
-                        <div class="timeline-block long inactive">
-                          <div class="title animate"></div>
-                          <div class="time">Today</div>
-                        </div>
-                        <div class="scroll-tip"></div>
-                      </div>
-                    </div>
-                    <div class="game-screen animate"></div>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
+      <div className="hayday__builder">
+        <div className="builder__heading">
+          <h1>CONSTANTLY EVOLVING</h1>
+          <p>
+            Hay Day has been constantly evolving to offer more user-friendly,
+            consistent and fun online experiences for Supercell gamers. There
+            have been countless updates since the game launched in 2012.
+          </p>
         </div>
-      </div>
 
+        <div className="builder__inner">
+          <div className="inner__tags">
+            <p>Global Launch</p>
+            <p>Global Launch</p>
+            <p>Global Launch</p>
+            <p>Global Launch</p>
+            <p>Global Launch</p>
+            <p>Global Launch</p>
+          </div>
+          <img className="img2" src="/bg_timeline_hayday.png" alt="" />
+        </div>
+        <img className="img1" src="/line.png" alt="" />
+      </div>
       <div className="hayday__section3">
         <div className="section3__cover">
-          <img src="bg_gamewebsite_hayday.png" alt="" />
+          <img src="/bg_gamewebsite_hayday.png" alt="" />
           <div className="section3__details">
             <h1>STAY UP-TO-DATE</h1>
             <p>
@@ -122,7 +95,9 @@ export default function Hayday() {
         </div>
       </div>
 
-      <div className="hayday__carosel"></div>
+      <div className="hayday__carosel">
+        <Carosel />
+      </div>
     </div>
   );
 }

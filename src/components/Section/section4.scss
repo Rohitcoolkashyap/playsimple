@@ -14,12 +14,14 @@
   transform: translate(200%, 0%);
   > h1 {
     color: white;
+    font-size: 50px;
     margin-bottom: 20px;
   }
   > p {
     color: white;
     margin-bottom: 35px;
     width: 600px;
+    font-size: 26px;
   }
   > button {
     font-size: 13px;
@@ -35,5 +37,76 @@
     width: 66%;
     height: 100%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section4 {
+    height: 580px;
+  }
+  .section4__left {
+    //flex: 0.7;
+    position: absolute;
+    top: 30%;
+    transform: translate(230%, 0%);
+    > h1 {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    > p {
+      color: white;
+      margin-bottom: 35px;
+      width: 300px;
+      font-size: 26px;
+    }
+    > button {
+      font-size: 13spx;
+      padding: 10px 35px;
+      border-radius: 8px;
+      background-color: #fff;
+      color: #000 !important;
+      font-weight: 600;
+    }
+  }
+  .section4__right {
+    img {
+      width: 66%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+// // /* Landscape phones and down */
+@media (max-width: 480px) {
+  .section4 {
+    background-size: cover;
+    height: 480px;
+  }
+  .section4__left {
+    //flex: 0.7;
+    position: absolute;
+    top: 30%;
+    transform: translate(10%, 0%);
+    > h1 {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    > p {
+      color: white;
+      margin-bottom: 15px;
+      width: 200px;
+      font-size: 13px;
+    }
+    > button {
+      font-size: 10px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background-color: #fff;
+      color: #000 !important;
+      font-weight: 600;
+    }
   }
 }

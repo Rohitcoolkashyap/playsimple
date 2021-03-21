@@ -1,11 +1,13 @@
+import React, { Suspense } from 'react';
+
 import './App.scss';
 import Homepage from './screens/homepage/Homepage';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Games from './screens/homepage/games/Games';
 import Header from './components/Header/Header';
 import Hayday from './screens/hayday/Hayday';
-import Footer from './components/footer/Footer';
 import CookieBox from './components/footer/CookieBox';
+const Footer = React.lazy(() => import('./components/footer/Footer'));
 
 function App() {
   return (
@@ -20,7 +22,7 @@ function App() {
           <Route path="/games" exact>
             <Games />
           </Route>
-          <Route path="/hayday" exact>
+          <Route path="/games/hayday" exact>
             <Hayday />
           </Route>
           <Route
@@ -31,14 +33,34 @@ function App() {
             }}
           />
           <Route
+            exact
+            path="/games/clashOfClan"
+            component={() => {
+              window.location.href =
+                'https://supercell.com/en/games/clashofclans/';
+              return null;
+            }}
+          />
+          <Route
             path="/support"
             component={() => {
               window.location.href = 'https://supercell.com/en/support/';
               return null;
             }}
           />
+          <Route
+            path="/games/boomBeach"
+            component={() => {
+              window.location.href =
+                'https://supercell.com/en/games/boombeach/';
+              return null;
+            }}
+          />
         </Switch>
-        <Footer />
+        <Suspense fallback={<div>loading...</div>}>
+          <Footer />
+        </Suspense>
+
         <CookieBox />
       </Router>
     </div>

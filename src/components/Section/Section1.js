@@ -1,8 +1,11 @@
 import React from 'react';
 import './section1.scss';
-export default function Section1({ title, para, button }) {
+export default function Section1({ title, para, button, img }) {
+  const styles = {
+    backgroundImage: `url('./${img}')`,
+  };
   return (
-    <div className="section1">
+    <div style={styles} className="section1">
       <div className="section1__info">
         <h1>{title}</h1>
 

@@ -1,7 +1,7 @@
 .footer {
   background-color: black;
   color: #fff;
-  height: 60vh;
+  height: 50vh;
 }
 .footer__container {
   width: 80%;
@@ -68,6 +68,50 @@
     no-repeat;
   background-size: 100% auto;
 }
+.amazon {
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 1.65;
+  font-family: 'SupercellText-Bold', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  outline: none;
+  color: #2d85f3;
+  text-decoration: none;
+  text-align: left;
+  display: inline-block;
+  text-indent: -9999px;
+  width: 166px;
+  height: 50px;
+  background: url(https://cdn.supercell.com/supercell.com/210319070834/all/themes/supercell/img/18/btn_amazon_appstore.png)
+    no-repeat;
+  background-size: 100% auto;
+}
+.galaxy {
+  --swiper-theme-color: #007aff;
+  --swiper-navigation-size: 44px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 1.65;
+  font-family: 'SupercellText-Bold', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  outline: none;
+  color: #2d85f3;
+  text-decoration: none;
+  text-align: left;
+  display: inline-block;
+  text-indent: -9999px;
+  width: 166px;
+  height: 50px;
+  background: url(https://cdn.supercell.com/supercell.com/210319070834/supercell.com/files/galaxystore_english_100px.jpg)
+    no-repeat;
+  background-size: 100% auto;
+}
 
 .footer__tags {
   display: flex;
@@ -81,4 +125,164 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  > img {
+    width: 70px;
+  }
+}
+.end__left {
+  > p {
+    font-size: 14px;
+    color: rgb(107, 106, 106);
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    height: 30vh;
+  }
+}
+// // /* Landscape phones and down */
+@media (max-width: 480px) {
+  .footer {
+    height: 50vh;
+  }
+  .footer__container {
+    width: 100%;
+    margin: auto;
+  }
+  .container__box {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .social {
+    > h6 {
+      margin-bottom: 15px;
+    }
+  }
+  .social__icons svg {
+    margin-right: 0px !important;
+    font-size: 28px !important;
+  }
+  .appstore {
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.65;
+    font-family: 'SupercellText-Bold', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    outline: none;
+    color: #2d85f3;
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 140px;
+    height: 50px;
+    background: url(https://cdn.supercell.com/supercell.com/210317084414/all/themes/supercell/img/18/footer_appstore.png)
+      no-repeat;
+    background-size: 100% auto;
+    margin-right: 10px;
+  }
+
+  .googleplay {
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.65;
+    font-family: 'SupercellText-Bold', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    outline: none;
+    color: #2d85f3;
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 140px;
+    height: 50px;
+    background: url(https://cdn.supercell.com/supercell.com/210317084414/all/themes/supercell/img/18/footer_googleplay.png)
+      no-repeat;
+    background-size: 100% auto;
+  }
+  .amazon {
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.65;
+    font-family: 'SupercellText-Bold', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    outline: none;
+    color: #2d85f3;
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 90px;
+    height: 50px;
+    background: url(https://cdn.supercell.com/supercell.com/210319070834/all/themes/supercell/img/18/btn_amazon_appstore.png)
+      no-repeat;
+    background-size: 100% auto;
+  }
+  .galaxy {
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.65;
+    font-family: 'SupercellText-Bold', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    outline: none;
+    color: #2d85f3;
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 90px;
+
+    height: 50px;
+    background: url(https://cdn.supercell.com/supercell.com/210319070834/supercell.com/files/galaxystore_english_100px.jpg)
+      no-repeat;
+    background-size: 100% auto;
+  }
+
+  .footer__tags {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+    > h6 {
+      margin-right: 0px;
+      font-size: 12px;
+    }
+  }
+  .footer__end {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    > img {
+      width: 50px;
+    }
+  }
+  .end__left {
+    > p {
+      font-size: 12px;
+      color: rgb(107, 106, 106);
+      font-weight: 700;
+    }
+  }
 }

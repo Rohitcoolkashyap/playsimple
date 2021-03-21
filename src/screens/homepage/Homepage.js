@@ -14,8 +14,9 @@ export default function Homepage() {
         title="SUPERCELL"
         para="Makers of Hay Day, Clash of Clans, Boom Beach, Clash Royale and Brawl Stars."
         button="See latest"
+        img="bg_hero_frontpage (1).jpg"
       />
-      <Section2 />
+      <Section2 num={0}/>
       <Section3 />
       <Section4 />
     </div>

@@ -8,3 +8,32 @@ hr {
   margin-bottom: 10px;
   border: 1px solid #9c979c;
 }
+
+// @media screen and (max-width: 1024px) {
+
+// // /* Landscape phone to portrait tablet */
+// @media (max-width: 767px) {
+// }
+
+// // /* Large desktop */
+// // @media (min-width: 1200px) { ... }
+
+// // /* Landscape phones and down */
+// @media (max-width: 480px) {
+//   .header__menuIcon {
+//     font-size: 34px !important;
+//   }
+//   .header__left {
+//     flex: 0.5;
+//     padding-left: 0;
+//     > img {
+//       width: 225px;
+//       height: 60px;
+//     }
+//   }
+// }
+
+// /* Portrait tablet to landscape and desktop */
+// @media (min-width: 768px) and (max-width: 979px) {
+//   // .header__right {
+//   }

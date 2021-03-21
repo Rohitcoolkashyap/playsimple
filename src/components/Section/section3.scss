@@ -6,10 +6,11 @@
     no-repeat;
   background-size: 100% auto;
   background-position: top left;
-  height: 100%;
+  height: 80vh;
 
   @extend .flex;
   justify-content: space-around;
+  position: relative;
 }
 
 .section3__left {
@@ -17,11 +18,13 @@
   > h1 {
     color: white;
     margin-bottom: 20px;
+    font-size: 50px;
   }
   > p {
     color: white;
     margin-bottom: 35px;
     width: 600px;
+    font-size: 24px;
   }
   > button {
     font-size: 13px;
@@ -34,9 +37,121 @@
 }
 .section3__right {
   flex: 0.6;
+  // position: relative;
   img {
+    position: absolute;
+    bottom: 0;
+    // top: 0;
+    transform: translate(20%, 57%);
     width: 600px;
-    height: 800px;
+    height: 700px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section3 {
+    width: 100%;
+    height: 50vh;
+    justify-content: space-between;
+  }
+  .section3__left {
+    // flex: 1;
+    margin-left: 30px;
+    width: 40%;
+
+    > h1 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 50px;
+  }
+    > p {
+      color: white;
+      margin-bottom: 35px;
+      width: 500px;
+      font-size: 24px;
+    }
+    > button {
+      font-size: 16px;
+      padding: 15px 41px;
+      border-radius: 8px;
+      background-color: #fff;
+      color: #000 !important;
+      font-weight: 600;
+    }
+  }
+  .section3__right {
+    width: 50%;
+    // flex: 0.6;
+    // position: relative;
+    img {
+      position: absolute;
+      bottom: 0;
+      // top: 0;
+      transform: translate(20%, 57%);
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+    }
+  }
+}
+
+// // /* Landscape phones and down */
+@media (max-width: 480px) {
+  .section3 {
+    width: 100%;
+    height: 75vh;
+    flex-direction: column;
+  }
+  .section3__left {
+    // flex: 1;
+    // margin-left: 30px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+    margin: auto;
+
+    // margin-bottom: 80px;
+
+    > h1 {
+      color: white;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    > p {
+      color: white;
+      margin-bottom: 35px;
+      width: 300px;
+      font-size: 18px;
+    }
+    > button {
+      font-size: 12px;
+      padding: 9px 22px;
+      border-radius: 8px;
+      background-color: #fff;
+      color: #000 !important;
+      font-weight: 600;
+    }
+  }
+  .section3__right {
+    // flex: 0.6;
+    // position: relative;
+
+    // display: grid;
+    // place-items: center;
+    img {
+      position: absolute;
+      // bottom: 0;
+      background-position: center;
+      top: 0;
+      // top: 0;
+      transform: translate(-20%, -10%);
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+    }
   }
 }

@@ -5,10 +5,10 @@ export default function Section4() {
   return (
     <div className="section4">
       <div className="section4__left">
-        <h1>GAMES</h1>
+        <h1>CAREERS</h1>
         <p>
-          Our dream is to create games that are played by as many people as
-          possible, enjoyed for years and remembered forever.
+          Join us and create games that are played for years and remembered
+          forever.
         </p>
         <Button variant="contained" size="large" color="primary">
           see careers

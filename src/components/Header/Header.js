@@ -3,24 +3,33 @@ import './header.scss';
 import './dropdown.scss';
 import { Link } from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
+import CloseIcon from '@material-ui/icons/Close';
+import MenuIcon from '@material-ui/icons/Menu';
+
 import data from '../../data.json';
 export default function Header() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [menu, setMenu] = useState(false);
+
+  const show = !menu ? 'header__left__menu' : 'header__left__menu show';
   return (
     <div className="header">
       <div className="header__left">
         <Link to="/">
-          <img src="w.png" alt="" />
+          <img src="/w.png" alt="logo" />
         </Link>
-        <ul className="header__left__menu">
+        <ul className={show}>
           <li>
             <span>
               <div className="dropdown">
-                <Link to="/games">Games</Link>
+                <span>
+                  <Link to="/games">Games</Link>
+                </span>
 
                 <div className="dropdown-content">
-                  <a href="#">HayDay</a>
-                  <a href="#">ClashOfClan</a>
+                  <Link to="/games/hayday">HayDay</Link>
+
+                  <a href="#">Clash Of Clan</a>
                   <a href="#">Boom Beach</a>
                   <a href="#">Clash Royal</a>
                   <a href="#">Brawl stars</a>
@@ -31,12 +40,16 @@ export default function Header() {
           <li>
             <span>
               <div className="dropdown">
-                <Link to="/careers">Careers</Link>
+                <span>
+                  <Link to="/careers">Careers</Link>
+                </span>
 
                 <div className="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                  <a href="#">Why you might love it here</a>
+                  <a href="#">Our Offices</a>
+                  <a href="#">Joining supercell</a>
+                  <a href="#">Living in tokyo</a>
+                  <a href="#">Stay in paris</a>
                 </div>
               </div>
             </span>
@@ -50,12 +63,16 @@ export default function Header() {
           <li className="three">
             <span>
               <div className="dropdown">
-                <Link>...</Link>
+                <span>
+                  <Link>...</Link>
+                </span>
 
                 <div className="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                  <a href="#">News</a>
+                  <a href="#">Our Story</a>
+                  <a href="#">Be Safe And Play Safe</a>
+                  <a href="#">For Media</a>
+                  <a href="#">Investment</a>
                 </div>
               </div>
             </span>
@@ -121,9 +138,16 @@ export default function Header() {
               }
             })
             .map((val) => (
-              <h1>{val.name}</h1>
+              <h5>
+                <Link to={val.target}>{val.name}</Link>
+              </h5>
             ))}
         </div>
+        {!menu ? (
+          <MenuIcon onClick={() => setMenu(!menu)} className="menuBar" />
+        ) : (
+          <CloseIcon onClick={() => setMenu(!menu)} className="menuBar" />
+        )}
       </div>
     </div>
   );

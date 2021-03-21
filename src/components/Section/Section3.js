@@ -1,6 +1,9 @@
 import React from 'react';
 import './section3.scss';
 import { Button } from '@material-ui/core';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 export default function Section3() {
   return (
     <div className="section3">
@@ -16,7 +19,12 @@ export default function Section3() {
       </div>
 
       <div className="section3__right">
-        <img src="fp_wmg_brawlstars.png" alt="" />
+        <LazyLoadImage
+          alt=""
+          effect="blur"
+          width="800px"
+          src="fp_wmg_brawlstars.png" // use normal <img> attributes as props
+        />
       </div>
     </div>
   );

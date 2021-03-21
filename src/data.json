@@ -1,18 +1,18 @@
 [
   {
     "name": "hayday",
-    "target": ""
+    "target": "/games/hayday"
   },
   {
-    "name": "supercell",
-    "target": ""
+    "name": "careers",
+    "target": "/careers"
   },
   {
     "name": "clashofclan",
-    "target": ""
+    "target": "/games/clashOfClan"
   },
   {
-    "name": "rohit",
-    "target": ""
+    "name": "support",
+    "target": "/support"
   }
 ]

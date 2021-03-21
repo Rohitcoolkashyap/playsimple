@@ -1,5 +1,7 @@
 @import '../../App.scss';
 
+.hayday {
+}
 .hayday__cover {
   background-image: url('./bg_hero_hayday.jpg');
   z-index: -1;
@@ -15,6 +17,7 @@
 .hayday__section1 {
   margin-top: 120px;
   @extend .flex;
+  margin-bottom: 170px;
 }
 .section1__cover {
   display: block;
@@ -25,15 +28,28 @@
   background-size: auto 100%;
   background-position: bottom right !important;
   position: relative;
-  left: -316px;
-  flex: 0.6;
+  left: -116px;
+  //flex: 0.6;
 }
 
 .hayday__section1__details {
-  flex: 0.5;
-  width: 1000px;
+  //flex: 0.5;
+  width: 700px;
+  > p {
+    margin-bottom: 40px;
+  }
 }
+.section1__icons {
+  @extend .flex;
 
+  justify-content: space-around;
+
+  > img {
+    width: 160px !important;
+    height: 50px !important;
+    margin-right: 10px;
+  }
+}
 // section3
 .section3__cover {
   margin-bottom: 100px;
@@ -46,14 +62,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   //   position: relative;
   width: 100%;
   //   display: grid;
   //   place-items: center;
   @extend .flex;
   > img {
-    width: 980px;
-    height: 489px;
+    width: 1200px;
+    height: 530px;
     // position: absolute;
     // left: -200px;
     margin-left: -200px;
@@ -62,4 +79,73 @@
 }
 .section3__details {
   width: 600px;
+  color: white;
+  > h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  > p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  > h6 {
+    margin-bottom: 20px;
+  }
+}
+
+.hayday__carosel {
+  margin-bottom: 90px;
+  // display: grid;
+  // place-items: center;
+}
+.carosel {
+  display: grid;
+  place-items: center;
+  > iframe {
+    width: 1000px !important;
+    height: 500px;
+    margin: auto;
+  }
+}
+
+.hayday__builder {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.builder__heading {
+  width: 600px;
+  > h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  > p {
+    font-size: 1.3rem;
+  }
+}
+.builder__inner {
+  @extend .flex;
+  justify-content: space-between;
+  .img2 {
+    width: 325px;
+    height: 477px;
+  }
+}
+.img1 {
+  position: absolute;
+  //top: 0;
+  display: inline-block;
+  height: 12px;
+  position: absolute;
+  //top: 137px;
+  left: 0;
+  bottom: 100px;
+  right: 0;
+}
+.inner__tags {
+  @extend .flex;
+  > p {
+    margin-right: 90px;
+  }
 }
