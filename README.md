@@ -8,7 +8,7 @@
 2.material UI
 3.react js
 ## libraries used in react js
-1 reacter router dom
+1 reacter router dom.
  = used for routing
 2 js-cookie
   = used for working with cookies
