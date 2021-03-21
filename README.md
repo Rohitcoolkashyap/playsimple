@@ -1,14 +1,14 @@
-## supercell clone
-## How to start project
+## supercell clon
+#### How to start project
 
-## cd playsimple/npm start
+#### cd playsimple/npm start
 
-## technologies used
+#### technologies used
 1.html,css
 2.material UI
 3.react js
-## libraries used in react js
-### reacter router dom.
+#### libraries used in react js
+#### reacter router dom.
  = used for routing
 ### js-cookie
   = used for working with cookies
